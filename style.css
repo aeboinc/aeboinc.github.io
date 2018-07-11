@@ -99,7 +99,9 @@ h4 {
     float: center;
 }
 
-.
+.img {
+	float: center;
+}
 
 @media screen and (max-width: 600px) {
     #intro {
