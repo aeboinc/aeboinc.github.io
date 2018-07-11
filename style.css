@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+h4 {
+  text-align:center;
+}
+#intro {
+    text-align: center;
+    background: url("https://i.imgur.com/QDxGPlV.png");
+    background-size: cover;
+    height: 500px;
+    /*   	max-height: 100vh; */
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+}
+
+#intro img{
+    width: 150px;
+}
+
+#aboutContainer {
+    background: url("https://i.imgur.com/cBn4qQE.png");
+    border: none;
+    padding: 40px;
+    min-height: auto;
+  	text-align: center;
+}
+
+#aboutContainer+div {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, .25);
+  	text-align: center;
+}
+
+#aboutContainer h2 {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px dotted black;
+}
+
+.container {
+ 	width: 100%;
+    padding: 40px;
+    border-bottom: 1px solid silver;
+  
+  	background: url("https://i.pinimg.com/originals/5a/6b/59/5a6b59a2543647a049e1f7dc2ec0a21d.jpg");
+  
+    overflow:auto;
+}
+
+.container img {
+    height: 300px;
+    max-width: 100%;
+/*     margin-bottom: 10px; */
+}
+
+.container div {
+    display: inline;
+}
+
+.container div h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.right {
+    text-align: center;
+  	background: url("");
+}
+
+.right img {
+    float: center;
+}
+
+.left img {
+    float: center;
+}
+
+.
+
+@media screen and (max-width: 600px) {
+    #intro {
+        height: 100vh;
+    }
+    #aboutMe {
+        width: 60%;
+    }
+    .container {
+        text-align: center;
+        padding: 30px;
+    }
+    .container div {
+        display: block;
+    }
+    .container div p {
+        text-align: left;
+    }
+    .container img {
+        height: auto;
+        max-height: 200px;
+        max-width: 80%;
+        display: block;
+    }
+    .left img,
+    .right img {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
